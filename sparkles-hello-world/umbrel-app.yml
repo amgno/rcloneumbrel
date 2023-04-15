@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: rclone
+id: magno-rclone
 name: Rclone UI
 tagline: tags
 icon: https://svgur.com/i/mvA.svg
@@ -26,3 +26,5 @@ releaseNotes: >-
   Add what's new in the latest version of your app here.
 dependencies: []
 path: ""
+defaultUsername: ""
+defaultPassword: ""
