@@ -5,12 +5,12 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: magnorclone_rclone_1
+      APP_HOST: sparkles-hello-world_server_1
       APP_PORT: 5572
 
 
 
-  rclone:
+  server:
     image: rclone/rclone
     container_name: rclone-container
     restart: always
