@@ -5,10 +5,20 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
-      APP_PORT: 3000
-    
-  server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+      APP_HOST: rclone_rclone_1
+      APP_PORT: 5572
+
+
+
+  rclone:
+    image: rclone/rclone
+    container_name: rclone-container
+    restart: always
+    command: rcd --rc-web-gui --rc-addr :5572 --rc-user am --rc-pass password
+    volumes:
+      - ${UMBREL_ROOT}/data/storage/rclone/config:/config/rclone
+      - ${UMBREL_ROOT}/data/storage/rclone/logs:/logs
+    environment:
+      - PHP_TZ=Europe/London
+      - PUID=1000
+      - PGID=1000
