@@ -1,18 +1,18 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
+id: rclone
+name: Rclone UI
+tagline: tags
 icon: https://svgur.com/i/mvA.svg
 category: Development
-version: "1.0.0"
-port: 4000
+version: "0.0.1"
+port: 4562
 description: >-
   Add your app's description here.
 
 
   You can also add newlines!
 
-developer: Umbrel
+developer: AM
 website: https://umbrel.com
 submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel-hello-world-app
@@ -26,5 +26,3 @@ releaseNotes: >-
   Add what's new in the latest version of your app here.
 dependencies: []
 path: ""
-defaultUsername: ""
-defaultPassword: ""
