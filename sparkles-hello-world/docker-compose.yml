@@ -14,7 +14,7 @@ services:
     image: rclone/rclone
     container_name: rclone-container
     restart: always
-    command: rcd --rc-web-gui --rc-addr :5572 --rc-user am --rc-pass password
+    command: rcd --rc-web-gui --rc-addr :5572 --rc-user am --rc-pass password --rc-web-gui-no-open-browser
     volumes:
       - ${UMBREL_ROOT}/data/storage/rclone/config:/config/rclone
       - ${UMBREL_ROOT}/data/storage/rclone/logs:/logs
