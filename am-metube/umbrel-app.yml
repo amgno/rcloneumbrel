@@ -2,7 +2,7 @@ manifestVersion: 1
 id: am-metube
 name: Metube
 tagline: media download
-icon: https://svgur.com/i/mvA.svg
+icon: https://raw.githubusercontent.com/alexta69/metube/master/favicon/android-chrome-384x384.png
 category: Media
 version: "0.1"
 port: 3421
