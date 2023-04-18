@@ -5,7 +5,7 @@ services:
     environment:
       APP_HOST: sparkles-testfuck_server_1
       APP_PORT: 8096
-      PROXY_AUTH_ADD: "false"
+      PROXY_AUTH_ADD: "true"
 
   server:
     image: linuxserver/jellyfin:10.8.9@sha256:af281e1b23198076a2ce848d710e8c7ee6f96134d18c61e9c23128e3419d9e86
