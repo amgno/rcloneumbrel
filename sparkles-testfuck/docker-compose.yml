@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jellyfin_server_1
+      APP_PORT: 8096
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: linuxserver/jellyfin:10.8.9@sha256:af281e1b23198076a2ce848d710e8c7ee6f96134d18c61e9c23128e3419d9e86
+    restart: on-failure
+    hostname: "${DEVICE_HOSTNAME}"
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+    ports:
+      # Service auto-discovery
+      - 7359:7359/udp
