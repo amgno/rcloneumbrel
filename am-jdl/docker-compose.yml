@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: am-jdl_server_1
+      APP_PORT: 5800
+
+  server:
+    hostname: "${DEVICE_HOSTNAME}"
+    volumes:
+      - '${UMBREL_ROOT}/data/storage/jdl:/config:rw'
+      - '${UMBREL_ROOT}/data/storage/downloads/jdl:/output:rw'
+    image: daniel0076/jdownloader-2
+
+
