@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: am-metube_server_1
+      APP_PORT: 8081
+
+  server:
+    image: ghcr.io/alexta69/metube
+    hostname: "${DEVICE_HOSTNAME}"
+    container_name: metube
+    restart: unless-stopped
+    volumes:
+      - ${UMBREL_ROOT}/data/storage/downloads/metube:/downloads

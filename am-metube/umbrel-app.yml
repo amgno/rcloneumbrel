@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: am-metube
+name: Metube
+tagline: media download
+icon: https://svgur.com/i/mvA.svg
+category: Media
+version: "0.1"
+port: 3421
+description: >-
+  Download youtube videos and other popular
+  media streaming sites
+developer: IDK
+website: https://umbrel.com
+submitter: Am
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+gallery:
+  - https://github.com/alexta69/metube/raw/master/screenshot.gif
+releaseNotes: >-
+  Nothing new sorry
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
