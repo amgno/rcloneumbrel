@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: am-wireguard
+name: Wireguard
+tagline: vpn
+icon: https://raw.githubusercontent.com/alexta69/metube/master/favicon/android-chrome-384x384.png
+category: Utility
+version: "0.1"
+port: 6732
+description: >-
+  VPN lulw
+developer: IDK
+website: https://umbrel.com
+submitter: Am
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+gallery:
+  - https://github.com/alexta69/metube/raw/master/screenshot.gif
+releaseNotes: >-
+  Nothing new sorry
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
