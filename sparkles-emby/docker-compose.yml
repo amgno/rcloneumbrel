@@ -21,3 +21,4 @@ services:
       - ./config:/config
       - ./data:/gdrive:rshared
     restart: unless-stopped
+    expose: 8096
