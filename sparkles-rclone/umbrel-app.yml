@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: sparkles-hello-world
+id: sparkles-rclone
 name: Hello World
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "1.0.0"
-port: 7422
+port: 5572
 description: >-
   Add your app's description here.
   You can also add newlines!

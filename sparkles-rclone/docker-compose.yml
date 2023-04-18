@@ -5,14 +5,14 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
+      APP_HOST: sparkles-rclone_server_1
       APP_PORT: 5572
 
 
 
   server:
     image: rclone/rclone
-    container_name: rclone-container
+    hostname: "${DEVICE_HOSTNAME}"
     restart: always
     command: rcd --rc-web-gui --rc-addr :5572 --rc-user am --rc-pass password --rc-web-gui-no-open-browser
     volumes:
