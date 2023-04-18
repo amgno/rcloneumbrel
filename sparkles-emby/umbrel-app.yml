@@ -5,23 +5,28 @@ tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Development
 version: "1.0.0"
-port: 8096
 description: >-
   Add your app's description here.
   You can also add newlines!
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-releaseNotes: >-
-  Add what's new in the latest version of your app here.
+developer: Jellyfin
+website: https://jellyfin.org/
 dependencies: []
+repo: https://github.com/jellyfin/jellyfin
+support: https://github.com/jellyfin/jellyfin/issues
+port: 8096
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+releaseNotes: >-
+  Updates Jellyfin from version 10.8.4 to 10.8.9. This update includes a series of stable hotfix releases that improve the overall performance, stability, and functionality of Jellyfin.
+  
+  Full changelogs for Jellyfin releases can be found here: https://github.com/jellyfin/jellyfin/releases
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-apps/commit/60878f278d544b204d8e7c96240c797f43a9b319
