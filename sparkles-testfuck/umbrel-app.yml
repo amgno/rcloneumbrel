@@ -1,7 +1,7 @@
 manifestVersion: 1
-id: jellyfin
+id: sparkles-testfuck
 category: Media
-name: Jellyfin
+name: Emby
 version: "10.8.9"
 tagline: The Free Software Media System
 description: >-
