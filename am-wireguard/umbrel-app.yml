@@ -2,7 +2,7 @@ manifestVersion: 1
 id: am-wireguard
 name: Wireguard
 tagline: vpn
-icon: https://raw.githubusercontent.com/alexta69/metube/master/favicon/android-chrome-384x384.png
+icon: 
 category: Utility
 version: "0.1"
 port: 6732
