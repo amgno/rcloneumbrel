@@ -12,13 +12,13 @@ services:
 
   server:
     image: lscr.io/linuxserver/emby:latest
-    container_name: emby
+    restart: on-failure
+    hostname: "${DEVICE_HOSTNAME}"
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
     volumes:
-      - ./config:/config
-      - ./data:/gdrive:rshared
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
     restart: unless-stopped
-    expose: 8096
